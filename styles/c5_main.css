@@ -22,7 +22,7 @@ a:focus, a:hover {
 }
 /* the styles for the header */
 header {
-	border-botom: 3px solid #931420;
+ border-bottom: 3px solid #931420;
 }
 header h2 {
 	font-size: 175%;
