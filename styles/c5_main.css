@@ -1,99 +1,70 @@
-/* RESET */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	background-color: white;
-	font-size: 16px;
-}
-/* GLOBAL STYLES */
+/* custom property */
 :root {
 	--global-color-1: #800000;
 }
 
-
+/* the styles for the elements */
 body {
-	width: 600px;
-	margin: 0 auto;
-	border: 3px solid #931420;
-	background-color: #fffded;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin-left: 10px;
 }
-
-header, footer {
-	border-top: 3px solid #931420;
-	border-bottom: 3px solid #931420;
+a:focus, a:hover {
+	font-style: italic;
 }
-
-header {
-	border-bottom: 3px solid #931420;
-	padding: 1.5em 0 2em;
-	background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-}
-
+/* the styles for the header */
 header h2 {
 	font-size: 175%;
 	color: var(--global-color-1);
-	padding: 0 30px;
+	text-indent: 30px;
 }
-
 header h3 {
 	font-size: 130%;
 	font-style: italic;
+	text-indent: 30px;
 }
-
-.main {
-	padding: 0 30px;
+header img {
+	float: left;
 }
-
+.shadow {
+	text-shadow: 2px 2px 2px var(--global-color-1);
+}
+/* the styles for the main content */
+main {
+	clear: left;
+}
 main h1 {
 	font-size: 150%;
 	padding: .3em 0;
 }
-
 main h2 {
 	color: var(--global-color-1);
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
-
 main h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-
+main img {
+	padding-bottom: 1em;
+}
 main p {
 	padding-bottom: .5em;
 }
-
-blockquote {
+main blockquote {
+	padding: 0 2em;
 	font-style: italic;
 }
-
 main ul {
 	padding: 0 0 .25em 1.25em;
 }
-
 main li {
 	padding-bottom: .35em;
 }
 
-footer {
-	background-color: #931420;
-	color: white;
-	padding: 15px;
-	text-align: center;
-}
-
+/* the styles for the footer */
 footer p {
 	text-align: center;
 	padding: 1em 0;
-}
-
-.speakers-heading {
-	border: 8px double #931420;
-	border-radius: 15px;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
